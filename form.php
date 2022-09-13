@@ -10,10 +10,6 @@
                 <option value="">Select Fiscal Year</option>
                 <option value="2020-2021">2020-2021</option>
                 <option value="2021-2022">2021-2022</option>
-                <option value="2022-2023">2022-2023</option>
-                <option value="2023-2024">2023-2024</option>
-                <option value="2024-2025">2024-2025</option>
-                <option value="2025-2026">2025-2026</option>
             </select>
         </td>
     </tr>
@@ -66,10 +62,6 @@
                 <option value="">Select Funding Fiscal Year</option>
                 <option value="2020-2021">2020-2021</option>
                 <option value="2021-2022">2021-2022</option>
-                <option value="2022-2023">2022-2023</option>
-                <option value="2023-2024">2023-2024</option>
-                <option value="2024-2025">2024-2025</option>
-                <option value="2025-2026">2025-2026</option>
             </select>
         </td>
     </tr>
@@ -185,29 +177,17 @@
     <tr>
         <td colspan="3">
             <p style="margin-top:50px;text-align:center;margin-left:0px;"><input type="file" name="ci_sig" id="ci_sig"></p>
-            <p style="margin-top:-20px;text-align:center;">-------------------------------------------------------------------------</p>
-            <p style="margin-top:-20px;margin-left:0px;text-align:center;margin-bottom:30px;font-weight:bold;font-size:12px;">
-                    (Image Format .jpg, .jpeg, .png and Size : 300 kb)</p>
-            <p style="margin-top:-20px;margin-left:0px;text-align:center;margin-bottom:30px;font-weight:bold;font-size:12px;color:red;">
-                    (You Must Upload Co- Principal Investigator Signature Image)</p>
-            <p style="margin-top:-20px;margin-left:0px;text-align:center;font-size:20px;">Signature of the Co- Principal Investigator</p>
-        </td>
+          </td>
         <td colspan="3">
             <p style="margin-top:50px;text-align:center;margin-left:0px;"><input type="file" name="pi_sig" id="pi_sig"></p>
-            <p style="margin-top:-20px;text-align:center;">-------------------------------------------------------------------------</p>
-            <p style="margin-top:-20px;margin-left:0px;text-align:center;margin-bottom:30px;font-weight:bold;font-size:12px;">
-                    (Image Format .jpg, .jpeg, .png and Size : 300 kb)</p>
-            <p style="margin-top:-20px;margin-left:0px;text-align:center;margin-bottom:30px;font-weight:bold;font-size:12px;color:red;">
-                    (You Must Upload Principal Investigator Signature Image)</p>
-            <p style="margin-top:-20px;margin-left:0px;text-align:center;font-size:20px;">Signature of the Principal Investigator</p>
-        </td>
+         </td>
     </tr>					
 </table>
 <div class="buttonsarea" style="margin-bottom:10px;">
     <input type="submit" value="Save &amp; Submit" name="submit_form" id="btn_submit_form" class="btn btn-primary btn-large">
 </div>
 
-                </form>
+</form>
 
 		</div>
 </div>
