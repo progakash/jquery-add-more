@@ -1,13 +1,4 @@
 <div class="da-panel">
-    <div class="da-panel-header">
-            <span style="font-size:28px;">Progress Report </span><br>
-            <span style="font-size:24px;">Grants for Advanced Research in Education (GARE)</span><br><hr>
-            <span style="font-size:14px;">Government of the peoples' Republic of Bangladesh</span><br>
-            <span style="font-size:14px;">Ministry of Education</span><br>
-            <span style="font-size:14px;">Seceondary and higher Education division</span><br>
-            <span style="font-size:14px;">Bangladesh Bureau of Educational Information Statistics (BANBEIS)</span>
-    </div>
-
 		<div class="da-panel-content">
                 <form method="post" id="progress_form" action="<?php echo base_url('pi_request/progress_report_submit'); ?>">
 
@@ -220,7 +211,12 @@
 
 		</div>
 </div>
+<!-- using for jquery, global jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<!-- using for image extension -->
 <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<!-- using for validate -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 <script type="text/javascript">
 
 $(document).ready(function(){
