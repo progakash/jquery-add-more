@@ -1,49 +1,4 @@
-<style>
-        label.error{
-            padding-left:5px;
-            color:red;
-        }
-        .da-panel{
-            margin-left: 50px;
-        }
-        .da-panel .da-panel-header{
-            text-align: center;
-            background:antiquewhite;
-            font-weight:100;
-            box-shadow: none;
-            border: none;
-        }
-		#table, #objective_workplan, #table_expenditure, #table_publication {
-				width: 1200px;
-				margin: 1em auto;
-				border-collapse: collapse;
-                margin-left:20px;
-                margin-right:20px;
-		}
-        #table tr td, #objective_workplan tr td, #table_expenditure tr td, #table_publication tr td {
-            color: #339;
-            padding: 9px;
-        }
-        
-		
-</style>
-
 <div class="da-panel">
-<?php
-            if(validation_errors()){
-                echo validation_errors('<div class="da-message error">','</div>');
-            }
-            if ($this->session->flashdata('flashOK')) {
-                echo"<div class=\"da-message success\">";
-                echo $this->session->flashdata('flashOK');
-                echo"</div>";
-            }
-            if ($this->session->flashdata('flashError')) {
-                echo"<div class=\"da-message error\">";
-                echo $this->session->flashdata('flashError');
-                echo"</div>";
-            }
-?>
     <div class="da-panel-header">
             <span style="font-size:28px;">Progress Report </span><br>
             <span style="font-size:24px;">Grants for Advanced Research in Education (GARE)</span><br><hr>
@@ -357,32 +312,3 @@ $(document).ready(function(){
 });
 
 </script>
-<!-- <script>
-var range_1 = document.getElementById("parcent_range1");
-var range_12 = document.getElementById("parcent_range12");
-var range_2 = document.getElementById("parcent_range2");
-var range_3 = document.getElementById("parcent_range3");
-console.log(range_1);
-var output_1 = document.getElementById("result_1");
-var output_12 = document.getElementById("result_12");
-console.log(output_1);
-// output_1.innerHTML = range_1.value;
-var output_2 = document.getElementById("result_2");
-// output_2.innerHTML = range_2.value;
-var output_3 = document.getElementById("result_3");
-// output_3.innerHTML = range_3.value;
-
-range_1.oninput = function() {
-    output_1.innerHTML = range_1.value;
-}
-range_12.oninput = function() {
-    output_12.innerHTML = range_12.value;
-}
-range_2.oninput = function() {
-    output_2.innerHTML = range_2.value;
-}
-
-range_3.oninput = function() {
-    output_3.innerHTML = range_3.value;
-}
-</script> -->
