@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Template</title>
+  <style>
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+</head>
+<body>
+ 
+    <textarea style="display:none" id="template">
+		<tr>
+			<td>
+				<label>{0}. Item</label>
+			</td>
+			<td class='type'>
+				<select name="item-type-{0}">
+					<option value="">Select...</option>
+					<option value="0">Learning jQuery</option>
+					<option value="1">jQuery Reference Guide</option>
+					<option value="2">jQuery Cookbook</option>
+					<option vlaue="3">jQuery In Action</option>
+					<option value="4">jQuery For Designers</option>
+				</select>
+			</td>
+			<td class='quantity'>
+				<input size='4' class="quantity" min="1" id="item-quantity-{0}" name="item-quantity-{0}">
+			</td>
+			<td class='quantity-error'></td>
+		</tr>
+	</textarea>
+ 
+<script>
+    $(document).ready(function(){
+
+        var template = $.validator.format($.trim($("#template").val()));
+		// console.log($.trim($("#template").val()));
+
+		function addRow() {
+			$(template(i++)).appendTo("#orderitems tbody");
+		}
+
+		var i = 1;
+		// start with one row
+		addRow();
+        console.log($.trim($('#template').val()));
+    });
+</script>
+ 
+</body>
+</html>
